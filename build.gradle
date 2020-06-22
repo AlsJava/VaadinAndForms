@@ -26,7 +26,6 @@ ext {
     spring_boot_version = '2.3.0.RELEASE'
     vaadin_version = '14.1.28'
     lombok_version = '1.18.12'
-    h2_version = '1.4.200'
 }
 
 dependencyManagement {
