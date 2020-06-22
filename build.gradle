@@ -1,9 +1,8 @@
 plugins {
     id 'java'
     id 'war'
-    id 'org.springframework.boot' version '2.3.0.RELEASE'
+    id 'org.springframework.boot' version '2.3.1.RELEASE'
     id 'io.spring.dependency-management' version '1.0.9.RELEASE'
-    id 'com.vaadin' version '0.6.0'
 }
 
 group 'edu.alsjava.example.vaadinform'
@@ -23,8 +22,7 @@ configurations {
 
 ext {
     junit_jupiter_version = '5.6.2'
-    spring_boot_version = '2.3.0.RELEASE'
-    vaadin_version = '14.1.28'
+    vaadin_version = '14.2.1'
     lombok_version = '1.18.12'
 }
 
@@ -44,7 +42,7 @@ dependencies {
                 .forEach { group -> exclude(group: group) }
     }
     // Spring Boot
-    implementation "org.springframework.boot:spring-boot-starter-web:$spring_boot_version"
+    implementation "org.springframework.boot:spring-boot-starter-web"
     // Boilerplate Code
     compileOnly "org.projectlombok:lombok:$lombok_version"
     annotationProcessor "org.projectlombok:lombok:$lombok_version"
